@@ -26,20 +26,15 @@ window.addEventListener('scroll',function (){
 document.addEventListener("DOMContentLoaded", function(event) { 
 
     document.getElementById("sendBtn").addEventListener("click", function(event) {
-        event.preventDefault();
+
         let message = document.getElementById("messageInput").value;
         let email = document.getElementById("emailInput").value;
         let name = document.getElementById("nameInput").value;
-    
-        console.log(message, email, name);
-
         
         message = "Máš email od " + name + "\n" + message;
-
+//d45bd1a1-14c5-4737-a2b8-6bf520bb3e2c
         Email.send({
-            Host : "smtp.gmail.com",
-            Username : "myhomepageemaijosefus",
-            Password : "Myhomepage4321",
+            SecureToken: "d45bd1a1-14c5-4737-a2b8-6bf520bb3e2c",
             To : 'jakub.josefus@seznam.cz',
             From : 'myhomepageemailjosefus@seznam.cz',
             Subject : email,
