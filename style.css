@@ -1,0 +1,200 @@
+*{
+	border: 0;
+	padding: 0;
+	margin: 0;
+	scroll-behavior: smooth;
+}
+
+html {
+	cursor: default;
+	font-family: "Ruda", sans-serif;
+}
+
+.maindiv {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font-weight: bold;
+	font-family: Arial, Helvetica, sans-serif;
+	width: 100%;
+	height: 100vh;
+}
+
+#a {
+	
+	background-image: url(images/ver1.jpg);
+	background-attachment: fixed;
+	background-size: cover;
+}
+
+#a::after {
+	content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+	height: 100vh;
+	background-image: linear-gradient(120deg, #343a4098, #929697);
+	opacity: .65;
+}
+
+#b {
+background:white;
+}
+#c {
+	background-image: url(images/myforest.jpg);
+	background-attachment: fixed;
+	background-size: cover;
+}
+
+#d {
+	background-image: url(images/chess.jpeg);
+	background-attachment: fixed;
+	background-size: cover;
+}
+
+#e {
+	background-color: rgba(78, 76, 76, 0.2);
+	background-size: cover;
+	height: 500px;
+	}
+
+#f {
+	background:white;
+	height: 200px;
+	}
+
+#g {
+	/* background:white; */
+	background-color: rgba(78, 76, 76, 0.2);
+	}	
+
+	#h {
+		background:white;
+		height: 600px;
+		width: 100%;
+		}
+
+
+
+.bgcontactr {
+	background-image: url(images/conver1.jfif);
+	width: 50%;
+	height: 500px;
+	background-size:cover;
+	margin-left: auto; 
+	margin-right: 0;
+	background-position: center center;  
+}
+
+
+.bgcontactl {
+	background-color: white;
+	width: 50%;
+	height: 500px;
+	background-size:cover;
+	margin-left: 0; 
+	margin-right: auto;
+	background-position: center center;  
+}
+
+
+
+	.bgfoot {
+		background-image: url(images/ver1.jpg);
+		opacity: .7;
+		background-size: cover;
+		height: 300px;
+		background-repeat: no-repeat;
+		display: grid;
+		place-items: center;
+	}
+
+.header {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 0px 10%;
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	z-index: 1000;
+	transition: .5s ease;
+}
+
+.contact-form {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+form {
+	margin-top: 50px;
+	transition:all 4s ease-in-out;
+}
+
+.form-control {
+	width: 600px;
+	background: transparent;
+	border: none;
+	outline: none;
+	border-bottom: 1px solid gray;
+	color: rgb(236, 14, 14);
+	font-size: 18px;
+	margin-bottom: 16px;
+}
+
+input
+{
+		height: 45px;
+}
+
+form .submit{
+	background: #ff5722;
+	border-color: transparent;
+	color: #fff;
+	font-size: 20px;
+	font-weight: bold;
+	letter-spacing: 2px;
+	height: 50px;
+	margin-top: 20px;
+}
+
+form .submit:hover{
+	background-color: #f44336;
+	cursor: pointer;
+}
+
+
+.scroling-active {
+	box-shadow: 0 3px 1rem  rgba(0, 0, 0, .1);
+	transition: 0.5s;
+	background-color: black;
+	transition: .5s ease;
+}
+
+
+
+.pic {
+	height: 100px;
+	width: auto;
+	padding-left: 25px;
+	transition: transform .2s;
+}
+
+.pic:hover {
+	transform: scale(1.5);
+}
+
+  .exp1024px {
+	  /* height: 400px; */
+	  width: 1024px;
+	  margin-left: auto;
+	  margin-right: auto;
+
+  }
