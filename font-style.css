@@ -1,11 +1,72 @@
+.homeText{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    z-index: 100;
+    text-align: center;
+    width: max-content;
+    height: max-content;
+
+}
+
 .h1Hel {
     font-size: 100px;
     color: white;
     font-family: "Ruda", sans-serif;
-    z-index: 100;
     margin: 0;
     padding: 0;
 }
+.h1Test{    
+    font-size: 50px;
+    color: white;
+    font-family: "Ruda", sans-serif;
+    margin: 0;
+    padding: 0;
+}
+.h1Test::before{  
+    content: '';
+    font-size: 100px;
+    color: white;
+    font-family: "Ruda", sans-serif;
+    margin: 0;
+    padding: 0;
+    animation: textEffect 8s infinite;
+}
+
+@keyframes textEffect{
+    0%{
+        content: 'Jakub Josefus'; 
+        opacity: 0;
+        font-size: 95%;
+    }
+    25%{
+        content: 'Jakub Josefus'; 
+        font-size: 100%;
+        opacity: 1;
+    }
+    50%{
+        content: 'Jakub Josefus'; 
+        font-size: 95%;
+        opacity: 0;
+    }
+    55%{
+        content: 'Portfolio';
+        font-size: 95%;
+        opacity: 0;        
+    }
+    80%{
+        opacity: 1;
+        font-size: 100%;
+        content: 'Portfolio';
+    }
+    100%{
+        content: 'Portfolio';
+        font-size: 95%;
+        opacity: 0;
+    }
+}
+
 
 
 .h1header {
@@ -13,7 +74,24 @@
     color: orange;
     padding-left: 100px;
     font-size: 50px;
+    white-space: nowrap;
 }
+
+@media screen and (max-width: 700px) {
+    .h1Hel {
+      font-size:14.3vw ;
+    }
+     .h1Test {
+        font-size:7.3vw ;
+      }
+
+
+    .h1header{
+        font-size:7.3vw; ;
+        padding-left: 5vw;
+    }
+  }
+
 
 .h1footer {
     margin: 0;
@@ -35,9 +113,21 @@
     color: orange;
     font-size: 50px;
     text-align: center;
-    padding-top: 25px;
+    padding-top: 100px;
     padding-bottom: 25px;
 }
+
+
+.h1About {
+    cursor: default;
+    color: orange;
+    font-size: 50px;
+    text-align: left;
+    padding-left: 30px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
 
 
 p {
@@ -49,7 +139,7 @@ p {
 
 .navLinks {
 	list-style: none;
-    padding-right: 100px;    
+    padding-right: 50px;    
 }
 
 .navLi {
@@ -68,8 +158,12 @@ p {
 } 
 
 .navA:hover {
-    color: orange;
     transition: all 0.3s ease 0s;
+    text-shadow: 0 0 1px orange,
+    0 0 2px orange,
+    0 0 3px orange,
+    0 0 4px orange,
+    0 0 5px orange;
 } 
 
 .h1Footer {
@@ -146,5 +240,106 @@ transition: background-color .5s ease;
   }
 
 
+  .fontOfHobies {
+	font-size: 70px;
+	color: white;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+.Esend {
+	font-size: 20px;
+	color: rgb(0, 0, 0);
+    margin: 0px;
+    font-weight: bold;
+    background-color: white;
+    border-radius: 15px;
+}
+
+.OkBt{
+    margin-top: 15px;
+}
+
+.pOk {
+    color: white;
+    border-radius: 17px;
+    font-size: 20px;
+    width: 100px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.pOk:hover {
+    color: white;
+    background-color: green;
+}
+
+.h1Hobies {
+    font-size: 50px;
+    color: white;
+    font-family: "Ruda", sans-serif;
+    margin: 0;
+    padding: 0;
+    text-shadow: 5px 5px 5px #000000;
+}
+
+.h1HobiesNew {
+    font-size: 3vw;
+    color: white;
+    font-family: "Ruda", sans-serif;
+    margin: 0;
+    padding: 0;
+    text-shadow: 5px 5px 5px #000000;
+    text-align: center;  
+}
+
+@media screen and (max-width: 1000px){
+    .h1HobiesNew{
+        font-size: 5vw;
+    }
+}
 
 
+.h1HobiesNewAnimation{
+    animation: hobiesEffect 2s;
+}
+
+@keyframes hobiesEffect {
+    0%{
+        opacity: 0;
+        padding-left: 200px;
+    }
+    100%{
+        opacity: 1;
+        padding-left: 0px;
+    }
+}
+
+
+
+
+.h1Hobies2 {
+    font-size: 50px;
+    color: white;
+    font-family: "Ruda", sans-serif;
+    margin: 0;
+    padding: 0;
+    text-shadow: 5px 5px 5px #000000;
+    margin-top: 100px;
+}
+
+.hiddenHeaderText{
+    font-size: 5vw;
+    text-decoration: none;
+    transition: all 0.3s ease 0s;
+	color: #edf0f1;
+}
+
+.hiddenHeaderText:hover {
+    transition: all 0.3s ease 0s;
+    text-shadow: 0 0 1px orange,
+    0 0 2px orange,
+    0 0 3px orange,
+    0 0 4px orange,
+    0 0 5px orange;
+} 

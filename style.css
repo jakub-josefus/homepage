@@ -5,12 +5,14 @@
 	scroll-behavior: smooth;
 }
 
-html {
+html, body {
 	cursor: default;
 	font-family: "Ruda", sans-serif;
+	max-width: 100%;
+	overflow-x: hidden;
 }
 
-.maindiv {
+.maindiv, .maindivAnimation,.maindivAnimation1 {
 	display: flex;
 	align-items: center;
 	justify-content: center;
@@ -19,15 +21,15 @@ html {
 	width: 100%;
 	height: 100vh;
 }
-
-#a {
+#home {
 	
 	background-image: url(images/ver1.jpg);
 	background-attachment: fixed;
 	background-size: cover;
+	background-position: center;
 }
 
-#a::after {
+#home::after {
 	content: "";
     position: absolute;
     top: 0;
@@ -38,35 +40,39 @@ html {
 	opacity: .65;
 }
 
-#b {
-background:white;
+#about {
+background:black;
+height: 975px;
+filter: drop-shadow(0 0 0.75rem black);
 }
-#c {
+#hobies {
 	background-image: url(images/myforest.jpg);
 	background-attachment: fixed;
 	background-size: cover;
+	background-position: center;
 }
 
-#d {
+#hobies2 {
 	background-image: url(images/chess.jpeg);
 	background-attachment: fixed;
 	background-size: cover;
+	background-position: center;
 }
 
-#e {
-	background-color: rgba(78, 76, 76, 0.2);
+#experience {
+	background-color: rgba(231, 225, 225, 0.2);
 	background-size: cover;
 	height: 500px;
 	}
 
-#f {
-	background:white;
-	height: 200px;
+#reference {
+	background-color: rgb(82, 80, 80);
+	height: 500px;
 	}
 
-#g {
-	/* background:white; */
-	background-color: rgba(78, 76, 76, 0.2);
+#contact {
+	 background:white; 
+	/*background-color: rgba(78, 76, 76, 0.2);*/
 	}	
 
 	#h {
@@ -82,32 +88,39 @@ background:white;
 	width: 50%;
 	height: 500px;
 	background-size:cover;
-	margin-left: auto; 
-	margin-right: 0;
 	background-position: center center;  
+	box-shadow: -10px 10px 10px black;
 }
 
-
 .bgcontactl {
-	background-color: white;
+	background-color: rgb(82, 80, 80);
 	width: 50%;
 	height: 500px;
 	background-size:cover;
-	margin-left: 0; 
-	margin-right: auto;
-	background-position: center center;  
+	background-position: center center; 
 }
 
-
+@media screen and (max-width: 1080px) {
+    .bgcontactr {
+      display: none;
+    }
+    .bgcontactl{
+    width: 100%;
+     margin-left: auto; 
+     margin-right: auto; 
+	 background-image: url(images/conver1.jfif);
+    }
+  }
 
 	.bgfoot {
 		background-image: url(images/ver1.jpg);
 		opacity: .7;
 		background-size: cover;
-		height: 300px;
+		height: 200px;
 		background-repeat: no-repeat;
 		display: grid;
 		place-items: center;
+		box-shadow: 0px 0px 10px 0px grey;
 	}
 
 .header {
@@ -124,27 +137,25 @@ background:white;
 	padding: 0;
 	box-sizing: border-box;
 	z-index: 1000;
-	transition: .5s ease;
+	transition: .2s ease;
 }
 
-.contact-form {
-	display: flex;
-	align-items: center;
-	justify-content: center;
+#contact-form {
+	height: 100%;
 }
 
-form {
-	margin-top: 50px;
-	transition:all 4s ease-in-out;
+
+.formItemAlign{
+	margin-left: auto;
+	margin-right: auto;
+	padding: 5%;
 }
 
 .form-control {
-	width: 600px;
-	background: transparent;
+	background: rgb(255, 255, 255);
 	border: none;
 	outline: none;
 	border-bottom: 1px solid gray;
-	color: rgb(236, 14, 14);
 	font-size: 18px;
 	margin-bottom: 16px;
 }
@@ -152,6 +163,14 @@ form {
 input
 {
 		height: 45px;
+		width: 100%;
+		padding-left: 5px;
+}
+textarea{
+	height: 180px;
+	width: 100%;
+	resize: none;
+	padding-left: 5px;
 }
 
 form .submit{
@@ -172,10 +191,9 @@ form .submit:hover{
 
 
 .scroling-active {
-	box-shadow: 0 3px 1rem  rgba(0, 0, 0, .1);
-	transition: 0.5s;
+	box-shadow: 0px 3px 6px  rgba(0, 0, 0, 0.753);
 	background-color: black;
-	transition: .5s ease;
+	transition: 1s ease;
 }
 
 
@@ -191,10 +209,230 @@ form .submit:hover{
 	transform: scale(1.5);
 }
 
+.picReference {
+	height: 50px;
+	width: auto;
+	padding-left: 25px;
+	transition: transform .2s;
+}
   .exp1024px {
-	  /* height: 400px; */
 	  width: 1024px;
 	  margin-left: auto;
 	  margin-right: auto;
 
+  }
+
+
+
+
+/* The Modal (background) */
+.modal {
+	display: none; /* Hidden by default */
+	position: fixed; /* Stay in place */
+	z-index: 200; /* Sit on top */
+	padding-top:  350px; /* Location of the box */
+	left: 0;
+	top: 0;
+	width: 100%; /* Full width */
+	height: 100%; /* Full height */
+	overflow: auto; /* Enable scroll if needed */
+	background-color: rgb(0,0,0); /* Fallback color */
+	background-color: rgba(0,0,0,0.7); /* Black w/ opacity */
+  }
+
+  .headerModal {
+	display: none; /* Hidden by default */
+	position: fixed; /* Stay in place */
+	z-index: 200; /* Sit on top */
+	padding-top:  350px; /* Location of the box */
+	left: 0;
+	top: 0;
+	width: 100%; /* Full width */
+	height: 100%; /* Full height */
+	background-color: rgb(0,0,0); /* Fallback color */
+  }
+
+@keyframes slide {
+	0%{left: 100%;}
+	100%{left: 0;}
+}
+@keyframes Backslide {
+	0%{left: 0;}
+	100%{left: 100%;}
+}
+
+
+
+
+
+/* Modal Content */
+.modal-content {
+	position: relative;
+	margin: auto;
+	padding: 0;
+	border: 1px solid #888;
+	width: 15%;
+	height: 125px;
+	box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+	text-align: center;
+	background-color: rgb(255, 255, 255);
+	border-radius: 15px;
+  }
+
+@media screen and (max-width:1300px){
+	.modal-content{
+		width: 70vw;
+	}
+}
+  
+
+
+
+
+  /* The Close Button */
+.close {
+	color: #000000;
+	font-size: 20px;
+	font-weight: bold;
+	position:absolute;
+	right: 20px;
+  }
+  
+  .close:hover,
+  .close:focus {
+	color: rgb(138, 131, 131);
+	text-decoration: none;
+	cursor: pointer;
+  }
+
+
+  .divOk{
+	  height: 50px;
+  }
+.imgOk {
+	margin-left: auto;
+	margin-right: auto;
+	height:inherit;
+	width: 50px;
+	position: relative;
+	background-image: url(images/okcopy.png);
+	background-size: cover;
+	animation:changeImg 0.5s ease-in;
+}
+@keyframes changeImg {
+    from { 
+		background-image: url(images/ok.png);
+    }
+    to {
+		background-image: url(images/okcopy.png);		
+    }
+	
+}
+
+.imgError {
+	margin-left: auto;
+	margin-right: auto;
+	height:inherit;
+	width: 50px;
+	position: relative;
+	background-image: url(images/error.png);
+	background-size: cover;
+}
+
+
+
+.containerIcons{
+	height: 500px;
+	width: auto;
+}
+
+.ulIcons{
+	display: flex;
+	text-align: center;
+}
+
+.ulIcons .liIcons {
+	position: relative;
+	display: block;
+	font-size: 30px;
+	color: #666;
+	height: 60px;
+	width: 60px;
+	background: #171515;
+	line-height: 60px;
+	border-radius: 50%;
+	margin: 0 15px;
+	cursor: pointer;
+}
+
+.ulIcons .liIcons::before {
+position: absolute;
+content: '';
+top: 0;
+left: 0;
+background: #d35400;
+height: 100%;
+width: 100%;
+border-radius: 50%;
+z-index: -1;
+transform: scale(0.9);
+transition: .5s;
+}
+
+.ulIcons .liIcons:hover::before {
+	filter: blur(3px);
+	transform: scale(1.2);
+	box-shadow: 0 0 15px #d35400;
+	}
+
+.ulIcons .liIcons:hover{
+	color: #ffa502;
+	box-shadow: 0 0 15px #d35400;
+	text-shadow: 0 0 15px #d35400;
+}
+
+
+.aboutImgDiv {
+	padding-left: 50px;
+	padding-bottom: 50px;
+	display: flex;
+
+}
+
+.myPic {
+	width: 23vw;
+	transform: scaleX(-1);
+}
+
+.menuIcon {
+	position: fixed;
+	color: rgb(255, 255, 255);
+	right: 18px;
+    top: 32.5px;
+	display: none;
+	font-size: 35px;
+}
+
+.menuIcon:hover{
+	text-shadow: 0 0 1px orange,
+    0 0 2px orange,
+    0 0 3px orange,
+    0 0 4px orange,
+    0 0 5px orange;
+	cursor: pointer;
+}
+
+  @media screen and (max-width: 1330px) {
+    .navA , .navA:hover {
+      display: none;
+    }
+	.menuIcon {
+		display: block;
+	  }
+  }
+
+  .hiddenHeaderAlign{
+	display: grid;
+    text-align: center;
+	margin-top: -50px;
   }
