@@ -31,7 +31,7 @@
     font-family: "Ruda", sans-serif;
     margin: 0;
     padding: 0;
-    animation: textEffect 8s infinite;
+    animation: textEffect 5s infinite;
 }
 
 @keyframes textEffect{
@@ -120,13 +120,34 @@
 
 .h1About {
     cursor: default;
-    color: orange;
-    font-size: 50px;
+    color: white;
+    font-size: 2vw;
+    text-align: left;
+    padding-left: 30px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    margin-top: 4vw;
+}
+
+.aboutMeText {
+    cursor: default;
+    color: white;
+    font-size: 1.5vw;
     text-align: left;
     padding-left: 30px;
     padding-top: 5px;
     padding-bottom: 5px;
 }
+
+.aboutMeTextContact {
+    cursor: default;
+    color: white;
+    font-size: 1.5vw;
+    text-align: right;
+    padding-left: 30px;
+    padding-top: 15vw;
+}
+
 
 
 
@@ -235,8 +256,7 @@ transition: background-color .5s ease;
   .row {
 	display: flex;
 	justify-content: center;
-    align-items: center;
-    
+    align-items: center;    
   }
 
 
@@ -290,7 +310,7 @@ transition: background-color .5s ease;
     margin: 0;
     padding: 0;
     text-shadow: 5px 5px 5px #000000;
-    text-align: center;  
+    text-align: center; 
 }
 
 @media screen and (max-width: 1000px){
@@ -301,17 +321,19 @@ transition: background-color .5s ease;
 
 
 .h1HobiesNewAnimation{
-    animation: hobiesEffect 2s;
+    animation: hobiesEffect 1s;
 }
 
 @keyframes hobiesEffect {
     0%{
         opacity: 0;
         padding-left: 200px;
+        display: block;
     }
     100%{
         opacity: 1;
         padding-left: 0px;
+        display: block;
     }
 }
 
@@ -335,6 +357,12 @@ transition: background-color .5s ease;
 	color: #edf0f1;
 }
 
+@media screen and (max-width:800px){
+    .hiddenHeaderText{
+        font-size: 11.5vw;
+    }
+}
+
 .hiddenHeaderText:hover {
     transition: all 0.3s ease 0s;
     text-shadow: 0 0 1px orange,
@@ -343,3 +371,42 @@ transition: background-color .5s ease;
     0 0 4px orange,
     0 0 5px orange;
 } 
+.contactButton{
+margin-left: 30px;
+color: white;
+background-color: black;
+width: 5vw;
+height: 1.5vw;
+border-radius: 8px;
+transition: ease-out 0.3s;
+font-size: 1vw;
+outline: none;
+border: 2px solid #125753;
+position: relative;
+z-index: 1;
+}
+
+.contactButton:hover{
+    color: white;
+    cursor: pointer;
+}
+
+.contactButton::before{
+    transition: 0.5s all ease;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    right: 50%;
+    bottom: 0;
+    opacity: 0;
+    content: "";
+    background-color: #125753;
+}  
+
+.contactButton:hover:before{
+    transition: 0.5s all ease;
+    left: 0;
+    right: 0;
+    opacity: 1;
+    z-index: -1;
+}  

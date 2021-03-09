@@ -41,9 +41,8 @@ html, body {
 }
 
 #about {
-background:black;
+background:rgb(0, 0, 0);
 height: 975px;
-filter: drop-shadow(0 0 0.75rem black);
 }
 #hobies {
 	background-image: url(images/myforest.jpg);
@@ -393,16 +392,62 @@ transition: .5s;
 
 
 .aboutImgDiv {
-	padding-left: 50px;
+	padding-left: 5vw;
 	padding-bottom: 50px;
 	display: flex;
 
 }
 
 .myPic {
+	display: none;
 	width: 23vw;
 	transform: scaleX(-1);
 }
+
+.myPicAnimation{
+	display: block;
+	animation: pictureEffect 1s forwards;
+}
+
+.myPicAnimationBack{
+	display: block;
+	animation: pictureEffectBack 1s forwards;
+}
+
+@keyframes pictureEffect {
+	0%{margin-top: 100px;opacity: 0;display: block;}
+	100%{margin-top: 0px;opacity: 1;display: block;}
+}
+
+@keyframes pictureEffectBack {
+	0%{margin-top: 0px;opacity: 1;display: block;}
+	100%{margin-top: 100px;opacity: 0;display: block;}
+	
+}
+
+.myTextAboutAnimation{
+	display: block;
+	animation: textAboutEffect 1s forwards;
+}
+@keyframes textAboutEffect {
+	0%{margin-top: 100px;opacity: 0;display: block;}
+	100%{margin-top: 0px;opacity: 1;display: block;}
+}
+/*
+@keyframes textAboutEffect {
+	0%{margin-top: 100px;margin-left: 0;display: block;}
+	100%{margin-top: 0px;opacity: 1;display: block;}
+}*/
+
+
+
+
+.aboutMeheader{
+	display: none;
+}
+
+
+
 
 .menuIcon {
 	position: fixed;

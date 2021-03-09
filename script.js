@@ -1,63 +1,54 @@
+var number = 0;
 window.addEventListener('scroll', function () {
 
   const parallax = document.getElementById("home");
-  if (parallax != null && window.scrollY<document.documentElement.scrollHeight*0.20) {
+  if (parallax != null && window.scrollY < document.documentElement.scrollHeight * 0.20) {
     let offset = window.pageYOffset;
     parallax.style.backgroundPositionY = `${offset * -0.3}px`;
   }
 
   let header = document.getElementsByClassName("header")[0];
- // if (window.scrollY + header.clientHeight + window.innerWidth / 2.5 < window.innerHeight) {
-  if (window.scrollY<=0) {
+  if (window.scrollY <= 0) {
     header.classList.remove("scroling-active");
   }
   else {
-    header.classList.add("scroling-active");}
+    header.classList.add("scroling-active");
+  }
 
 
 
+  let content = document.querySelector('.maindivAnimation');
+  let contentPosition = content.getBoundingClientRect().top * 1.7;
+  let screenPosition = window.innerHeight;
+  if (contentPosition < screenPosition) {
+    content.classList.add('h1HobiesNewAnimation');
+  }
+  else {
+    content.classList.remove('h1HobiesNewAnimation');
+  }
+
+  let content1 = document.querySelector('.maindivAnimation1');
+  let contentPosition1 = content1.getBoundingClientRect().top * 1.7;
+  let screenPosition1 = window.innerHeight;
+  if (contentPosition1 < screenPosition1) {
+    content1.classList.add('h1HobiesNewAnimation');
+  }
+  else {
+    content1.classList.remove('h1HobiesNewAnimation');
+  }
+
+  let aboutSection = document.querySelector('#about');
+  let contentPosition2 = aboutSection.getBoundingClientRect().bottom * 0.75;
+  let screenPosition2 = window.innerHeight;
+  let myPicture = document.querySelector('.myPic');
+  let myText = document.querySelector('.aboutMeheader');
 
 
-
-
-
-    console.log(document.documentElement.scrollHeight);
-    console.log(window.scrollY);  
-
-
-
-
-    let content = document.querySelector('.maindivAnimation');
-    let contentPosition = content.getBoundingClientRect().top*1.7;
-    let screenPosition = window.innerHeight;
-    if(contentPosition < screenPosition){
-      content.classList.add('h1HobiesNewAnimation');
-    }
-    else{
-      content.classList.remove('h1HobiesNewAnimation');
-    }
-
-    let content1 = document.querySelector('.maindivAnimation1');
-    let contentPosition1 = content1.getBoundingClientRect().top*1.7;
-    let screenPosition1 = window.innerHeight;
-    if(contentPosition1 < screenPosition1){
-      content1.classList.add('h1HobiesNewAnimation');
-    }
-    else{
-      content1.classList.remove('h1HobiesNewAnimation');
-    }
-
-
-
-
-
-
-
-
-
-
-
-
+  if (contentPosition2 < screenPosition2) {
+    myPicture.classList.add('myPicAnimation');
+    myText.classList.add('myPicAnimation');
+    myText.style.display = "block";
+  }
 
 
 })
@@ -96,37 +87,25 @@ document.addEventListener("DOMContentLoaded", function (event) {
 
 
   document.getElementsByClassName("menuIcon")[0].addEventListener("click", function (event) {
-    //alert("fuck me");    
     let hideMenu = document.getElementById("hiddenHeader");
 
-    if(hideMenu.style.display !== "block")
-{
-    hideMenu.style.animation="slide 0.5s";
-    //setTimeout(function(){;}, 1000);
-    //clearInterval(setInterval(frame, 2));
-    //hideMenu.style.display="none";
+    if (hideMenu.style.display !== "block") {
+      hideMenu.style.animation = "slide 0.5s";
 
-  hideMenu.style.display="block";
-}
-    else{
-     hideMenu.style.animation="Backslide 0.5s forwards";
-     //animation-fill-mode: forwards;
-    //  //setTimeout(function(){;}, 1000);
-    //  clearInterval(setInterval(frame, 2));
-     // hideMenu.style.display="none";
-    //  //hideMenu.style.animation="slide 0.7s";
-      setTimeout(function(){hideMenu.style.display="none";}, 500);
 
+      hideMenu.style.display = "block";
     }
-    
+    else {
+      hideMenu.style.animation = "Backslide 0.5s forwards";
+      setTimeout(function () { hideMenu.style.display = "none"; }, 500);
+    } 
+
   });
 
-
-
-
-
-
-
+    document.getElementsByClassName("hiddenHeaderAlign")[0].addEventListener("click", function (event) {
+      let hideMenu = document.getElementById("hiddenHeader");
+      hideMenu.style.display = "none";  
+      });
 
 });
 window.onclick = function (event) {
