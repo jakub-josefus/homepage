@@ -357,11 +357,7 @@ transition: background-color .5s ease;
 	color: #edf0f1;
 }
 
-@media screen and (max-width:800px){
-    .hiddenHeaderText{
-        font-size: 11.5vw;
-    }
-}
+
 
 .hiddenHeaderText:hover {
     transition: all 0.3s ease 0s;
@@ -410,3 +406,28 @@ z-index: 1;
     opacity: 1;
     z-index: -1;
 }  
+
+@media screen and (max-width:800px){
+    .hiddenHeaderText{
+        font-size: 11.5vw;
+    }
+    .h1About{
+        font-size: 6vw;
+    }
+    .aboutMeText{
+        font-size: 2.5vw;
+    }
+    .aboutMeTextContact{
+        font-size: 2.5vw;
+        padding-top: 0;
+        text-align: left;
+    }
+    .contactButton{
+        margin-left: 0px;
+        margin-top: 2vw;
+        font-size: 3vw;
+        width: 15vw;
+        height: 5vw;
+    }
+    
+}
