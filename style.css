@@ -481,3 +481,15 @@ transition: .5s;
     text-align: center;
 	margin-top: -50px;
   }
+  @media screen and (max-width:500px){
+    .ulIcons .liIcons {
+        font-size: 6vw;
+        height: 12vw;
+        width: 12vw;
+        line-height: 12vw;
+		margin: 0 2vw;
+    }
+	.pic{
+		height: 18vw;
+	}
+}
