@@ -62,24 +62,25 @@ document.addEventListener("DOMContentLoaded", function (event) {
     let name = document.getElementById("nameInput").value;
     if (email && name && message) {
       message = "Máš email od " + name + "\n" + message;
-      /*Email.send({
+      Email.send({
           SecureToken: "d45bd1a1-14c5-4737-a2b8-6bf520bb3e2c",
           To : 'jakub.josefus@seznam.cz',
           From : 'myhomepageemailjosefus@seznam.cz',
           Subject : email,
           Body : message
-      });  */
+      }); 
       alert("Email sent");
-      var modal = document.getElementById("myModal");
+      location.reload();
+      /*var modal = document.getElementById("myModal");
       modal.style.display = "block";
       document.getElementById("negative").hidden = true;
-      document.getElementById("positive").hidden = false;
+      document.getElementById("positive").hidden = false;*/
     } else {
-      alert("Somethig go wrong. Try fill all boxes");
-      var modal = document.getElementById("myModal");
+      alert("Oops, something went wrong. Try fill all boxes.");
+      /*var modal = document.getElementById("myModal");
       modal.style.display = "block";
       document.getElementById("negative").hidden = false;
-      document.getElementById("positive").hidden = true;
+      document.getElementById("positive").hidden = true;*/
     }
   });
 
@@ -108,7 +109,7 @@ document.addEventListener("DOMContentLoaded", function (event) {
       });
 
 });
-window.onclick = function (event) {
+/*window.onclick = function (event) {
   var modal = document.getElementById("myModal");
   var span = document.getElementsByClassName("close")[0];
   var ok = document.getElementsByClassName("pOk")[0];
@@ -116,4 +117,4 @@ window.onclick = function (event) {
     modal.style.display = "none";
     location.reload();
   }
-}
+}*/
