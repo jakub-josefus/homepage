@@ -95,7 +95,7 @@
 
 .h1footer {
     margin: 0;
-    font-size: 20px;
+    font-size: 1.5vh;
     padding-right: 10px;
     font-weight: bold;
     color: white;
@@ -199,10 +199,10 @@ p {
 
 .h1Footer {
     color:white;
-    font-size: 20px;    
+    font-size: 1.5vh;    
 }
 
-.aFooter {
+/*.aFooter {
     color: white;
     text-decoration: none;
     transition: .5s ease;
@@ -211,7 +211,7 @@ p {
 .aFooter:hover {
     color: orange;
     transition: .5s ease;
-}
+}*/
 
 
 .buttCv {

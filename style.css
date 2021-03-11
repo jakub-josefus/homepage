@@ -116,7 +116,7 @@ height: 975px;
 		background-image: url(images/ver1.jpg);
 		opacity: .7;
 		background-size: cover;
-		height: 200px;
+		height: 10vw;
 		background-repeat: no-repeat;
 		display: grid;
 		place-items: center;
