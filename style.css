@@ -473,23 +473,21 @@ transition: .5s;
 	}
 }
 
+.tooltip{
+	display: flex;
+	width: auto;
+	height: auto;
+}
 
-
-.tooltip .tooltiptext {
+.tooltiptext {
 	visibility: hidden;
-	width: 120px;
 	background-color: black;
 	color: #fff;
-	text-align: center;
 	border-radius: 6px;
-	/*padding: 5px 0;*/
 	position: absolute;
-	/* Position the tooltip */
-	/*position: absolute;
-	z-index: 100;
-	top: 100%;
-	left: 50%;*/
-	margin-left: -60px;
+	white-space: nowrap;
+	padding-left: 8px;
+	padding-right: 8px;
   }
 
   .tooltip:hover .tooltiptext {
