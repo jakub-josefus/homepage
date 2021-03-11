@@ -100,18 +100,6 @@ height: 975px;
 	background-position: center center; 
 }
 
-@media screen and (max-width: 1080px) {
-    .bgcontactr {
-      display: none;
-    }
-    .bgcontactl{
-    width: 100%;
-     margin-left: auto; 
-     margin-right: auto; 
-	 background-image: url(images/conver1.jfif);
-    }
-  }
-
 	.bgfoot {
 		background-image: url(images/ver1.jpg);
 		opacity: .7;
@@ -268,12 +256,6 @@ form .submit:hover{
 	background-color: rgb(255, 255, 255);
 	border-radius: 15px;
   }
-
-@media screen and (max-width:1300px){
-	.modal-content{
-		width: 70vw;
-	}
-}
 
 .close {
 	color: #000000;
@@ -446,32 +428,14 @@ transition: .5s;
 	cursor: pointer;
 }
 
-  @media screen and (max-width: 1330px) {
-    .navA , .navA:hover {
-      display: none;
-    }
-	.menuIcon {
-		display: block;
-	  }
-  }
+
 
   .hiddenHeaderAlign{
 	display: grid;
     text-align: center;
 	margin-top: -50px;
   }
-  @media screen and (max-width:500px){
-    .ulIcons .liIcons {
-        font-size: 6vw;
-        height: 12vw;
-        width: 12vw;
-        line-height: 12vw;
-		margin: 0 2vw;
-    }
-	.pic{
-		height: 18vw;
-	}
-}
+
 
 .tooltip{
 	display: flex;
