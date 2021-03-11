@@ -36,9 +36,9 @@
   }
 
   @media screen and (max-width:800px){
-    .hiddenHeaderText{
+    /*.hiddenHeaderText{
         font-size: 11.5vw;
-    }
+    }*/
     .h1About{
         font-size: 6vw;
     }

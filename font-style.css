@@ -350,7 +350,7 @@ transition: background-color .5s ease;
 }
 
 .hiddenHeaderText{
-    font-size: 5vw;
+    font-size: 6vh;
     text-decoration: none;
     transition: all 0.3s ease 0s;
 	color: #edf0f1;
