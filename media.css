@@ -57,6 +57,19 @@
         width: 15vw;
         height: 5vw;
     }  
+
+    .myPicAnimation{
+        display: block;
+        white-space: nowrap;
+        animation: TextAppear 2s forwards;
+    }
+
+    .myTextAnimation{
+        display: block;
+        white-space: normal;
+        animation: TextAppear 2s forwards;
+    }
+
 }
 
 @media screen and (max-width: 1080px) {

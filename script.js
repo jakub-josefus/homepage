@@ -46,8 +46,14 @@ window.addEventListener('scroll', function () {
 
   if (contentPosition2 < screenPosition2) {
     myPicture.classList.add('myPicAnimation');
-    myText.classList.add('myPicAnimation');
+    myText.classList.add('myTextAnimation');
     myText.style.display = "block";
+    myPicture.style.display = "block";
+  }
+
+  if (window.scrollY <= 0) {
+    myPicture.style.display = "none";
+    myText.style.display = "none";
   }
 
 
