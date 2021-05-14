@@ -375,13 +375,13 @@ transition: .5s;
 .myPicAnimation{
 	display: block;
 	white-space: nowrap;
-	animation: HorizontalAnimation 1s forwards;
+	animation: HorizontalAnimation 1s linear forwards;
 }
 
 .myTextAnimation{
 	display: block;
 	white-space: nowrap;
-	animation: HorizontalAnimation 1s forwards;
+	animation: HorizontalAnimation 1s linear forwards;
 }
 
 @keyframes HorizontalAnimation {
