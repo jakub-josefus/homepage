@@ -114,6 +114,24 @@ document.addEventListener("DOMContentLoaded", function (event) {
       hideMenu.style.display = "none";  
       });
 
+
+      document.getElementById("X").addEventListener("click", function (event) {
+        var modal = document.getElementById("modalGallery"); 
+        console.log("funguje"); 
+        console.log(modal);        
+        modal.style.display = "none";    
+      
+      
+      });
+      document.getElementById("close").addEventListener("click", function (event) {
+        var modal = document.getElementById("modalGallery"); 
+        console.log("funguje"); 
+        console.log(modal);        
+        modal.style.display = "none";    
+      
+      
+      });
+
 });
 /*window.onclick = function (event) {
   var modal = document.getElementById("myModal");
@@ -124,3 +142,11 @@ document.addEventListener("DOMContentLoaded", function (event) {
     location.reload();
   }
 }*/
+
+function newwin() {    
+  var modal = document.getElementById("modalGallery"); 
+  console.log("funguje"); 
+  console.log(modal);        
+  modal.style.display = "block";
+
+ }

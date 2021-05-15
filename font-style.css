@@ -151,6 +151,13 @@ p {
     margin: 0px;
     background-color: rgba(0, 0, 0, 0.7);
 }
+#project p {
+	font-size: 1.5vw;
+	color: white;
+    margin: 0;
+    background-color:transparent;
+    padding: 0;
+}
 
 .navLinks {
 	list-style: none;
@@ -199,7 +206,7 @@ p {
 
 
 .buttCv {
-	background-color:#0e77a898;
+	background-color:#0d6efd;
 	color: white;
 	padding: 1rem 2rem;
     border-radius: 2rem;
@@ -256,14 +263,10 @@ transition: background-color .5s ease;
     border-style: solid;
     border-width: medium; 
     margin-left: 15vw;
-    margin-right: 15vw; 
+    margin-right: 15vw;
+    box-shadow: 0 4px 8px 0 rgb(0 0 0 / 20%), 0 6px 20px 0 rgb(0 0 0 / 19%); 
   }
 
-  .row {
-	display: flex;
-	justify-content: center;
-    align-items: center;    
-  }
 
 
   .fontOfHobies {
@@ -300,14 +303,7 @@ transition: background-color .5s ease;
     background-color: green;
 }
 
-.h1Hobies {
-    font-size: 50px;
-    color: white;
-    font-family: "Ruda", sans-serif;
-    margin: 0;
-    padding: 0;
-    text-shadow: 5px 5px 5px #000000;
-}
+
 
 .h1HobiesNew {
     font-size: 3vw;
@@ -317,6 +313,7 @@ transition: background-color .5s ease;
     padding: 0;
     text-shadow: 5px 5px 5px #000000;
     text-align: center; 
+    white-space: nowrap;
 }
 
 .h1HobiesNewAnimation{

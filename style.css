@@ -3,6 +3,7 @@
 	padding: 0;
 	margin: 0;
 	scroll-behavior: smooth;
+	box-sizing: content-box;
 }
 
 html, body {
@@ -58,6 +59,37 @@ height: 975px;
 	background-position: center;
 }
 
+#project {
+	background-color: rgb(82, 80, 80);
+	height: auto;
+	width: 100vw;
+	padding-bottom: 30px;
+	box-sizing: border-box;
+}
+
+
+#project a img {
+		width: 80%;
+		height: 100%;
+}
+
+.projectBimg{
+	width: 50%;
+
+}
+
+#project a img:hover {
+	transform: scale(1.1);
+}
+
+.proBgColor{
+	background-color: rgba(255, 162, 74, 0.836);
+	background-image: url(images/orangebg.jpg);
+	background-repeat: no-repeat;
+}
+
+
+
 #experience {
 	background-color: rgba(231, 225, 225, 0.2);
 	background-size: cover;
@@ -72,16 +104,6 @@ height: 975px;
 	background-color: rgb(82, 80, 80);
 	height: 500px;
 	}
-
-	
-
-	#h {
-		background:white;
-		height: 600px;
-		width: 100%;
-		}
-
-
 
 .bgcontactr {
 	background-image: url(images/conver1.jfif);
@@ -127,6 +149,20 @@ height: 975px;
 	z-index: 1000;
 	transition: .2s ease;
 }
+
+#gallery{background-color: rgba(231, 225, 225, 0.2);}
+
+#gallery .container {
+	width: 60%;
+	height: auto;
+}
+
+
+.img-fluid {
+	max-width: 100%;
+	height: auto;
+  }
+
 
 #contact-form {
 	height: 100%;
@@ -307,10 +343,7 @@ form .submit:hover{
 
 
 
-.containerIcons{
-	height: 500px;
-	width: auto;
-}
+
 
 .ulIcons{
 	display: flex;
@@ -463,4 +496,26 @@ transition: .5s;
 
   .tooltip:hover .tooltiptext {
 	visibility: visible;
+  } 
+
+  /* #gallery {box-sizing: border-box;} */
+
+
+  /* On hover black overlay
+  	.carousel-inner::before {
+	content: '';
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	background: #000;
+	opacity: 0;
+	transition: .5s ease;
   }
+  
+  .carousel-inner:hover:before {
+	opacity: 0.3;
+	z-index: 20;
+  } */
+

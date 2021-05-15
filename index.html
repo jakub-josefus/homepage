@@ -5,6 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio Jakub Josefus</title>
+    <link rel="stylesheet" href="bootstrap-grid.css">
+    <link rel="stylesheet" href="bootstrapSpecificItems.css">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="font-style.css">
     <link rel="stylesheet" href="media.css">
@@ -14,6 +16,7 @@
 </head>
 
 <body>
+    <script src="bootstrap.js"></script>
     <script src="script.js"></script>
     <script src="https://smtpjs.com/v3/smtp.js"></script>
     <script src="https://kit.fontawesome.com/1ced319a06.js" crossorigin="anonymous"></script>
@@ -34,6 +37,7 @@
                     <li class="navLi"><a class="navA" href="#">Home</a></li>
                     <li class="navLi"><a class="navA" href="#about">About</a></li>
                     <li class="navLi"><a class="navA" href="#hobies">Hobies</a></li>
+                    <li class="navLi"><a class="navA" href="#project">Projects</a></li>
                     <li class="navLi"><a class="navA" href="#experience">Experience</a></li>
                     <li class="navLi"><a class="navA" href="#contact">Contact</a></li>
                     <li class="navLi"><a class="navA" href="#reference">Reference</a></li>                    
@@ -71,7 +75,7 @@
         
         <div class="maindivAnimation">
       <div>     
-<h1 class="h1HobiesNew">I enjoy going outsite to the nature</h1>
+            <h1 class="h1HobiesNew">I enjoy going outsite to the nature</h1>
             <h1 class="h1HobiesNew">Especially with my friends</h1></div> 
      
         </div> 
@@ -85,12 +89,40 @@
 <div>
 <h1 class="h1HobiesNew">I often play board games</h1>
         <h1 class="h1HobiesNew">Because it's fun and relax</h1>
-</div>
-            
+</div>          
 
+        </div>
+    </section> 
+
+    <section id="project">
+        <h1 class="h1exp">Projects</h1>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 mb-4 mb-md-0">
+                    <div class="card text-center mx-auto" style="height: auto;">
+                        <img src="images/project1.png" class="card-img-top img-fluid" alt="p1">
+                        <div class="card-body">
+                          <p class="card-text text-dark mb-4 fs-5">Web page created by Bootsrap <br> For more info click on See More</p>
+                          <a href="https://jakub-josefus.github.io/pondeliCviceni/" class="btn btn-primary" target="_blank">See More</a>
+                        </div>
+                      </div>
+                </div>
+                  <div class="col-md-6">
+                      <div class="card text-center mx-auto" style="height: auto;">
+                        <img src="images/project2.png" class="card-img-top img-fluid" alt="p2">
+                        <div class="card-body">
+                          <p class="card-text text-dark mb-4 fs-5">Web page created by Bootstrap <br> For more info click on See More</p>
+                          <a href="https://jakub-josefus.github.io/BSproject/" class="btn btn-primary" target="_blank">See More</a>
+                        </div>
+                      </div>
+                  </div>           
+            </div>
 
         </div>
     </section>
+
+
+
 
     <section id="experience">
         <h1 class="h1exp">Experience</h1>
@@ -172,6 +204,77 @@
             </div>                
     </section>
 
+    <section id="gallery">
+      <h1 class="h1exp">Hobies gallery</h1>
+      <div class="rowexp rowexpBorder">
+          <div class="row">
+            <div class="col-6 pb-5 pt-4 ps-5 pe-3">
+              <h6 class="fs-4 text-center">Travel</h6>
+              <div id="carouselExampleIndicator" class="carousel slide" data-bs-ride="carousel">
+                  <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselExampleIndicator" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicator" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicator" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicator" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                  </div>
+                  <a href="gallery1.html" target="_blank"><div class="carousel-inner">
+                    <div class="carousel-item active">
+                      <img src="gallery/P1130960.JPG" class="d-block img-fluid" alt="1">
+                    </div>
+                    <div class="carousel-item">
+                      <img src="gallery/P1130919.JPG" class="d-block img-fluid" alt="3">
+                    </div>
+                    <div class="carousel-item">
+                      <img src="gallery/P1130950.JPG" class="d-block img-fluid" alt="3">
+                    </div>
+                    <div class="carousel-item">
+                      <img src="gallery/P1140017.JPG" class="d-block img-fluid" alt="3">
+                    </div>
+                  </div></a>
+                  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicator" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  </button>
+                  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicator" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  </button>
+                </div>
+            </div>
+            <div class="col-6 pb-5 pt-4 ps-3 pe-5">
+              <h6 class="fs-4 text-center">Board games</h6>
+              <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+                  <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                  </div>
+                  <a href="gallery2.html" target="_blank"><div class="carousel-inner">
+                    <div class="carousel-item active">
+                      <img src="gallery/Karak-Black-01.jpg" class="d-block img-fluid" alt="1">
+                    </div>
+                    <div class="carousel-item">
+                      <img src="gallery/photo-1596451190630-186aff535bf2.jpg" class="d-block img-fluid" alt="3">
+                    </div>
+                    <div class="carousel-item">
+                      <img src="gallery/Carcassonne-final-board.png" class="d-block img-fluid" alt="3">
+                    </div>
+                    <div class="carousel-item">
+                      <img src="gallery/dixit-board-game-gameplay.jpg" class="d-block img-fluid" alt="3">
+                    </div>
+                  </div></a>
+                  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  </button>
+                  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  </button>
+                </div>
+            </div>
+          </div>
+      </div>             
+  </section>
+
+
             <section id="contact">
                 <h1 class="h1exp">Contact me</h1>
                 <div class="row">
@@ -202,7 +305,7 @@
                         </div>
 
                            <div class="bgcontactr"></div>
-        </div>
+                </div>
                     </div>
          
     </section>
@@ -213,27 +316,24 @@
             <h1 class="h1exp">Reference</h1>
         </div>
 
-  <div class="row"    style="margin-top: 70px;">
-        <ul class="ulIcons">
-            
-            <a href="https://www.linkedin.com/in/jakubjosefus/" target="_blank"><li class="liIcons"><i class="fab fa-linkedin-in"></i></li></a>
-            <a href="https://github.com/jakub-josefus" target="_blank"><li class="liIcons"><i class="fab fa-github"></i></li></a>
-            <a href="https://www.facebook.com/" target="_blank"><li class="liIcons"><i class="fab fa-facebook-f"></i></li></a>
-            <a href="https://www.instagram.com/" target="_blank"><li class="liIcons"><i class="fab fa-instagram"></i></li></a>
-            <a href="https://twitter.com/?lang=cs" target="_blank"><li class="liIcons"><i class="fab fa-twitter"></i></li></a>
-        </ul>
-    </div>
 
-
-        <div class="row" style="padding-top: 70px;">
-            <a class="paddingref" href="images/cv/Jakub Josefus CV ENG-CZ.pdf" target="_blank">
-                <button class="buttCv">
-                    <h1 class="h1cvdownload">CV Download</h1>
-                </button>
-            </a>
-        </div>    
-    </section>
-
+      <div class="row "    style="margin-top: 70px;">
+                <ul class="ulIcons justify-content-center align-items-center">
+                    <a href="https://www.linkedin.com/in/jakubjosefus/" target="_blank"><li class="liIcons"><i class="fab fa-linkedin-in"></i></li></a>
+                    <a href="https://github.com/jakub-josefus" target="_blank"><li class="liIcons"><i class="fab fa-github"></i></li></a>
+                    <a href="https://www.facebook.com/" target="_blank"><li class="liIcons"><i class="fab fa-facebook-f"></i></li></a>
+                    <a href="https://www.instagram.com/" target="_blank"><li class="liIcons"><i class="fab fa-instagram"></i></li></a>
+                    <a href="https://twitter.com/?lang=cs" target="_blank"><li class="liIcons"><i class="fab fa-twitter"></i></li></a>
+                </ul>
+        </div>
+            <div class="" style="padding-top: 70px; display: flex; justify-content: center; align-items: center;">
+                    <a href="images/cv/Jakub Josefus CV ENG-CZ.pdf" target="_blank">
+                        <button class="buttCv">
+                            <h1 class="h1cvdownload">CV Download</h1>
+                        </button>
+                    </a>
+            </div>  
+    </section> 
 
 
     <footer>
@@ -251,11 +351,11 @@
         <a class="hiddenHeaderText" href="#">Home</a>
         <a class="hiddenHeaderText" href="#about">About</a>
         <a class="hiddenHeaderText" href="#hobies">Hobies</a>
+        <a class="hiddenHeaderText" href="#project">Projects</a>
         <a class="hiddenHeaderText" href="#experience">Experience</a>
         <a class="hiddenHeaderText" href="#contact">Contact</a>
         <a class="hiddenHeaderText" href="#reference">Reference</a>
 </div>
 </div>
-
 
 </html>

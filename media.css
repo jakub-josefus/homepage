@@ -33,12 +33,19 @@
         font-size:7.3vw; ;
         padding-left: 5vw;
     }
+
+    #gallery {
+        display: none;
+    }
+  }
+  @media screen and (max-width: 767px) {
+    .card {
+        width: 70vw;
+    }
+    
   }
 
   @media screen and (max-width:800px){
-    /*.hiddenHeaderText{
-        font-size: 11.5vw;
-    }*/
     .h1About{
         font-size: 6vw;
     }
@@ -70,6 +77,14 @@
         animation: TextAppear 2s forwards;
     }
 
+    #project p {
+        font-size: 4vw;
+    }
+
+    *{
+        box-sizing: border-box;
+    }
+
 }
 
 @media screen and (max-width: 1080px) {
@@ -96,7 +111,7 @@
 	}
 }
 
-@media screen and (max-width: 1330px) {
+@media screen and (max-width: 1500px) {
     .navA , .navA:hover {
       display: none;
     }
