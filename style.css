@@ -67,21 +67,6 @@ height: 975px;
 	box-sizing: border-box;
 }
 
-
-#project a img {
-		width: 80%;
-		height: 100%;
-}
-
-.projectBimg{
-	width: 50%;
-
-}
-
-#project a img:hover {
-	transform: scale(1.1);
-}
-
 .proBgColor{
 	background-color: rgba(255, 162, 74, 0.836);
 	background-image: url(images/orangebg.jpg);
